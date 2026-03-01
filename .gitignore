@@ -5,12 +5,33 @@ plan.md
 target/
 build/
 dist/
+Cargo.lock.bak
+*.rlib
 
-# OS / editor
+# Per-OS / editor
 .DS_Store
 Thumbs.db
 *.swp
 *.bak
 *.log
+*.tmp
 .idea/
 .vscode/
+.fleet/
+.zed/
+
+# Generated output
+*.sarif
+slither-report.json
+slither-report.md
+slither-checklist.md
+slither-triage.json
+lancer-slither.port
+
+# Etherscan cache
+.etherscan-cache/
+
+# Coverage
+*.profraw
+*.profdata
+tarpaulin-report.html

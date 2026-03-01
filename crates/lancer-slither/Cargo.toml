@@ -1,0 +1,114 @@
+[package]
+name = "lancer-slither"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Rust clone of slither — Solidity static analyzer, part of the Lancer ecosystem."
+
+[package.metadata.bundle]
+name = "lancer-slither"
+identifier = "com.lancer.slither"
+short_description = "Solidity static analyzer (Lancer)"
+long_description = "Rust clone of crytic/slither — 101 detectors, 21 printers, full multi-framework support, GUI by default."
+category = "DeveloperTool"
+
+[lib]
+name = "lancer_slither"
+path = "src/lib.rs"
+
+[[bin]]
+name = "lancer-slither"
+path = "src/main.rs"
+
+[[bin]]
+name = "lancer-slither-cli"
+path = "src/bin/cli.rs"
+
+[[bin]]
+name = "lancer-slither-mutate"
+path = "src/bin/mutate.rs"
+
+[[bin]]
+name = "lancer-slither-prop"
+path = "src/bin/prop.rs"
+
+[[bin]]
+name = "lancer-slither-check-upgradeability"
+path = "src/bin/check_upgradeability.rs"
+
+[[bin]]
+name = "lancer-slither-read-storage"
+path = "src/bin/read_storage.rs"
+
+[[bin]]
+name = "lancer-slither-find-paths"
+path = "src/bin/find_paths.rs"
+
+[[bin]]
+name = "lancer-slither-format"
+path = "src/bin/format.rs"
+
+[[bin]]
+name = "lancer-slither-flat"
+path = "src/bin/flat.rs"
+
+[[bin]]
+name = "lancer-slither-check-erc"
+path = "src/bin/check_erc.rs"
+
+[[bin]]
+name = "lancer-slither-interface"
+path = "src/bin/interface.rs"
+
+[[bin]]
+name = "lancer-slither-doctor"
+path = "src/bin/doctor.rs"
+
+[[bin]]
+name = "lancer-slither-documentation"
+path = "src/bin/documentation.rs"
+
+[dependencies]
+slither-core.workspace = true
+slither-ir.workspace = true
+slither-detectors.workspace = true
+slither-printers.workspace = true
+crytic-compile-rs.workspace = true
+
+clap.workspace = true
+clap_complete.workspace = true
+eyre.workspace = true
+color-eyre.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+tokio.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true
+rayon.workspace = true
+regex.workspace = true
+walkdir.workspace = true
+crossbeam-channel.workspace = true
+parking_lot.workspace = true
+chrono.workspace = true
+tiny_http.workspace = true
+dirs.workspace = true
+directories.workspace = true
+url.workspace = true
+hex.workspace = true
+once_cell.workspace = true
+reqwest.workspace = true
+which.workspace = true
+tempfile.workspace = true
+
+# GUI
+eframe.workspace = true
+egui.workspace = true
+egui_extras.workspace = true
+egui_plot.workspace = true
+rfd.workspace = true
+arboard.workspace = true
+egui-notify.workspace = true
+muda.workspace = true
+image.workspace = true

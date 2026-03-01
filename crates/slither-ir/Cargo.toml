@@ -1,0 +1,24 @@
+[package]
+name = "slither-ir"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "SlithIR: three-address intermediate representation, SSA, dataflow."
+
+[lib]
+path = "src/lib.rs"
+
+[dependencies]
+slither-core.workspace = true
+
+serde.workspace = true
+serde_json.workspace = true
+eyre.workspace = true
+thiserror.workspace = true
+tracing.workspace = true
+petgraph.workspace = true
+indexmap.workspace = true
+ahash.workspace = true
+once_cell.workspace = true

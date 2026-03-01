@@ -1,0 +1,33 @@
+[package]
+name = "slither-core"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Slither core: types, project model, suppression, output emitters."
+
+[lib]
+path = "src/lib.rs"
+
+[dependencies]
+crytic-compile-rs.workspace = true
+
+serde.workspace = true
+serde_json.workspace = true
+toml.workspace = true
+eyre.workspace = true
+thiserror.workspace = true
+tracing.workspace = true
+regex.workspace = true
+walkdir.workspace = true
+tera.workspace = true
+zip.workspace = true
+once_cell.workspace = true
+indexmap.workspace = true
+chrono.workspace = true
+semver.workspace = true
+url.workspace = true
+parking_lot.workspace = true
+ahash.workspace = true
+rayon.workspace = true
